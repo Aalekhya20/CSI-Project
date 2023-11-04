@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
 table{
     font-size: 30px;
     font-style: inherit;
@@ -21,15 +22,20 @@ table{
     display: flex;
     
 }
+.outer{
+    display: table;
+    margin: 20px auto;
+}
+
 .transparent-box {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 50px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    display: inline-block; /* Set the display to inline-block */
+    display: table-cell; /* Set the display to inline-block */
     max-width: 600px;
-    box-shadow: 0 5px 15px rgba(0,0,0.5);
-    fill-opacity: inherit;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    max-height: 200px;
 }
 
 .head{
@@ -40,6 +46,9 @@ table{
     font-style: oblique;
 }
 
-
-
-
+.si{
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    border-collapse: collapse;
+}
